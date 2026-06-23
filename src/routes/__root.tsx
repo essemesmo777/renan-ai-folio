@@ -77,19 +77,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Renan Augusto Costa Brum — Desenvolvedor No-Code & IA Generativa" },
+      {
+        name: "description",
+        content:
+          "Portfólio de Renan Augusto Costa Brum — Desenvolvedor No-Code, especialista em IA Generativa, automação, front-end e marketing digital.",
+      },
+      { name: "author", content: "Renan Augusto Costa Brum" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:title", content: "Renan Augusto Costa Brum — Dev No-Code & IA" },
+      {
+        property: "og:description",
+        content:
+          "Soluções digitais com IA, automação, No-Code e front-end moderno.",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap",
       },
     ],
   }),
