@@ -23,7 +23,7 @@ import {
   CheckCircle2,
   Briefcase,
 } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import profileAsset from "@/assets/renan.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -237,14 +237,15 @@ function Hero() {
         >
           <div className="brand-gradient absolute -inset-1 rounded-3xl opacity-40 blur-2xl" />
           <div className="glass glow-ring relative overflow-hidden rounded-3xl p-2">
-            <div className="relative overflow-hidden rounded-2xl aspect-square">
+            <div className="relative overflow-hidden rounded-2xl aspect-[3/4]">
               <img
-                src={profileImg}
+                src={profileAsset.url}
                 alt="Renan Augusto Costa Brum"
-                width={1024}
+                width={768}
                 height={1024}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-top"
               />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-[#2563EB]/25 via-transparent to-[#06B6D4]/15 mix-blend-overlay" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B1120] via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
                 <div>
