@@ -23,7 +23,7 @@ import {
   CheckCircle2,
   Briefcase,
 } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import profileAsset from "@/assets/renan.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
