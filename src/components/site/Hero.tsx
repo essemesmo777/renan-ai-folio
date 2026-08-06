@@ -140,7 +140,7 @@ export function Hero() {
             <motion.div
               animate={{ y: [0, -14, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -left-4 bottom-8 hidden rounded-2xl surface px-4 py-3 sm:block"
+              className="absolute -bottom-6 -left-6 hidden rounded-2xl surface px-4 py-3 sm:block"
             >
               <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
                 Agente de IA
