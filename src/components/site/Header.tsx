@@ -57,7 +57,7 @@ export function Header() {
               className="hidden items-center gap-2 rounded-xl grad-brand px-4 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03] sm:inline-flex"
             >
               <MessageCircle className="size-4" />
-              Falar no WhatsApp
+              Conte sobre seu projeto
             </a>
             <button
               type="button"
@@ -89,7 +89,7 @@ export function Header() {
               rel="noopener noreferrer"
               className="mt-1 rounded-lg grad-brand px-3 py-2.5 text-center text-sm font-semibold text-white"
             >
-              WhatsApp {CONTACT.whatsappLabel}
+              Conte sobre seu projeto
             </a>
           </div>
         ) : null}
