@@ -77,21 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Renan Augusto Costa Brum — Desenvolvedor No-Code & IA Generativa" },
-      {
-        name: "description",
-        content:
-          "Portfólio de Renan Augusto Costa Brum — Desenvolvedor No-Code, especialista em IA Generativa, automação, front-end e marketing digital.",
-      },
-      { name: "author", content: "Renan Augusto Costa Brum" },
-      { property: "og:type", content: "website" },
-      { property: "og:title", content: "Renan Augusto Costa Brum — Dev No-Code & IA" },
-      {
-        property: "og:description",
-        content:
-          "Soluções digitais com IA, automação, No-Code e front-end moderno.",
-      },
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: "author", content: "RankBrum.AI" },
+      { name: "theme-color", content: "#050507" },
+      { property: "og:site_name", content: "RankBrum.AI" },
+      { property: "og:locale", content: "pt_BR" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -99,7 +88,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap",
       },
     ],
   }),
