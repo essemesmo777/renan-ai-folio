@@ -9,7 +9,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-2xl: calc(var(--radius) + 10px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -29,82 +29,155 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-brand-blue: var(--brand-blue);
-  --color-brand-cyan: var(--brand-cyan);
-  --color-brand-green: var(--brand-green);
+  --color-violet: var(--violet);
+  --color-neon: var(--neon);
+  --color-electric: var(--electric);
+  --color-signal: var(--signal);
+  --color-graphite: var(--graphite);
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Poppins", "Inter", ui-sans-serif, sans-serif;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, sans-serif;
 }
 
 :root {
-  --radius: 0.875rem;
-  --background: oklch(0.16 0.03 264);            /* #0B1120 */
-  --foreground: oklch(0.985 0.005 250);          /* #F9FAFB */
-  --card: oklch(0.22 0.03 264);                  /* #111827 */
-  --card-foreground: oklch(0.985 0.005 250);
-  --popover: oklch(0.22 0.03 264);
-  --popover-foreground: oklch(0.985 0.005 250);
-  --primary: oklch(0.58 0.22 260);               /* #2563EB */
-  --primary-foreground: oklch(0.985 0.005 250);
-  --secondary: oklch(0.28 0.03 264);
-  --secondary-foreground: oklch(0.985 0.005 250);
-  --muted: oklch(0.26 0.025 264);
-  --muted-foreground: oklch(0.72 0.02 260);      /* ~#9CA3AF */
-  --accent: oklch(0.72 0.16 210);                /* #06B6D4 */
-  --accent-foreground: oklch(0.16 0.03 264);
-  --destructive: oklch(0.62 0.22 25);
-  --destructive-foreground: oklch(0.985 0.005 250);
-  --border: oklch(1 0 0 / 10%);
+  --radius: 1rem;
+  --background: oklch(0.12 0.005 280);
+  --foreground: oklch(0.98 0.002 280);
+  --card: oklch(0.165 0.008 285);
+  --card-foreground: oklch(0.98 0.002 280);
+  --popover: oklch(0.15 0.008 285);
+  --popover-foreground: oklch(0.98 0.002 280);
+  --primary: oklch(0.63 0.24 300);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.22 0.008 285);
+  --secondary-foreground: oklch(0.98 0.002 280);
+  --muted: oklch(0.21 0.008 285);
+  --muted-foreground: oklch(0.72 0.012 285);
+  --accent: oklch(0.24 0.02 300);
+  --accent-foreground: oklch(0.98 0.002 280);
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(1 0 0 / 9%);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.58 0.22 260);
-  --brand-blue: #2563EB;
-  --brand-cyan: #06B6D4;
-  --brand-green: #10B981;
+  --ring: oklch(0.63 0.24 300);
+  --violet: #a855f7;
+  --neon: #ff2e9a;
+  --electric: #3b82f6;
+  --signal: #22c55e;
+  --graphite: #17171c;
 }
 
 .dark {
-  --background: oklch(0.16 0.03 264);
-  --foreground: oklch(0.985 0.005 250);
-  --card: oklch(0.22 0.03 264);
-  --card-foreground: oklch(0.985 0.005 250);
+  --background: oklch(0.12 0.005 280);
+  --foreground: oklch(0.98 0.002 280);
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
-  html { scroll-behavior: smooth; }
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
   body {
-    background-color: var(--color-background);
+    background-color: #050507;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
-    background-image:
-      radial-gradient(ellipse 80% 50% at 20% 0%, rgba(37, 99, 235, 0.18), transparent 60%),
-      radial-gradient(ellipse 60% 40% at 80% 10%, rgba(6, 182, 212, 0.12), transparent 60%);
-    background-attachment: fixed;
+    overflow-x: hidden;
   }
-  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--violet) 45%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--violet);
+    outline-offset: 2px;
+  }
 }
 
-@utility glass {
-  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
-  backdrop-filter: blur(14px) saturate(140%);
-  border: 1px solid rgba(255,255,255,0.08);
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
 
-@utility text-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #93c5fd 45%, #06B6D4 100%);
+@utility surface {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012));
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(12px) saturate(130%);
+}
+
+@utility glow-violet {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 30px 90px -40px rgba(168, 85, 247, 0.55);
+}
+
+@utility text-shine {
+  background: linear-gradient(100deg, #ffffff 0%, #e9d5ff 40%, #93c5fd 70%, #ffffff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-@utility brand-gradient {
-  background: linear-gradient(135deg, #2563EB 0%, #06B6D4 100%);
+@utility grad-brand {
+  background: linear-gradient(120deg, #a855f7 0%, #ff2e9a 55%, #3b82f6 100%);
 }
 
-@utility glow-ring {
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,0.06),
-    0 20px 60px -20px rgba(37, 99, 235, 0.35),
-    0 8px 30px -10px rgba(6, 182, 212, 0.2);
+@utility hairline {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@utility card-hover {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 30px 80px -45px rgba(168, 85, 247, 0.7);
+  }
+}
+
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-marquee {
+  animation: marquee-x 32s linear infinite;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -22px, 0) scale(1.04);
+  }
+}
+
+@utility animate-float {
+  animation: float-slow 12s ease-in-out infinite;
 }
