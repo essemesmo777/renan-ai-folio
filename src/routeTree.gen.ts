@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as TecnologiasIndexRouteImport } from './routes/tecnologias.index'
+import { Route as TecnologiasSlugRouteImport } from './routes/tecnologias.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,30 +23,39 @@ const TecnologiasIndexRoute = TecnologiasIndexRouteImport.update({
   path: '/tecnologias/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TecnologiasSlugRoute = TecnologiasSlugRouteImport.update({
+  id: '/tecnologias/$slug',
+  path: '/tecnologias/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/tecnologias/$slug': typeof TecnologiasSlugRoute
   '/tecnologias/': typeof TecnologiasIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/tecnologias/$slug': typeof TecnologiasSlugRoute
   '/tecnologias': typeof TecnologiasIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/tecnologias/$slug': typeof TecnologiasSlugRoute
   '/tecnologias/': typeof TecnologiasIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/tecnologias/'
+  fullPaths: '/' | '/tecnologias/$slug' | '/tecnologias/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/tecnologias'
-  id: '__root__' | '/' | '/tecnologias/'
+  to: '/' | '/tecnologias/$slug' | '/tecnologias'
+  id: '__root__' | '/' | '/tecnologias/$slug' | '/tecnologias/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  TecnologiasSlugRoute: typeof TecnologiasSlugRoute
   TecnologiasIndexRoute: typeof TecnologiasIndexRoute
 }
 
@@ -65,11 +75,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TecnologiasIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tecnologias/$slug': {
+      id: '/tecnologias/$slug'
+      path: '/tecnologias/$slug'
+      fullPath: '/tecnologias/$slug'
+      preLoaderRoute: typeof TecnologiasSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  TecnologiasSlugRoute: TecnologiasSlugRoute,
   TecnologiasIndexRoute: TecnologiasIndexRoute,
 }
 export const routeTree = rootRouteImport
