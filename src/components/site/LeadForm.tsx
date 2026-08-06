@@ -69,9 +69,9 @@ export function LeadForm() {
   return (
     <Section id="contato">
       <SectionHeading
-        eyebrow="Solicitar orçamento"
-        title="Conte sobre o seu projeto"
-        description="Preencha o formulário e retornamos com as próximas etapas. Se preferir, fale direto pelo WhatsApp."
+        eyebrow="Contato"
+        title="Vamos conversar sobre o seu projeto?"
+        description="Conte o que você precisa. Vou analisar as informações e entrar em contato para entender melhor o projeto."
       />
 
       <div className="mt-14 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
@@ -185,9 +185,9 @@ export function LeadForm() {
           <div className="rounded-2xl surface p-6">
             <h3 className="font-display text-lg font-semibold">O que acontece depois</h3>
             <ol className="mt-3 space-y-2 text-sm text-muted-foreground">
-              <li>1. Retornamos o contato para entender o projeto.</li>
+              <li>1. Retorno o contato para entender o projeto.</li>
               <li>2. Fazemos o diagnóstico e definimos o escopo.</li>
-              <li>3. Enviamos a proposta com etapas, prazos e condições.</li>
+              <li>3. Envio a proposta com etapas, prazos e condições.</li>
             </ol>
           </div>
         </div>

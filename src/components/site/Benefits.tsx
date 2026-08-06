@@ -22,7 +22,7 @@ export function WhatWeCreate() {
         <div className="grid gap-8 p-8 sm:p-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <h2 className="text-balance font-display text-2xl font-bold sm:text-3xl">
-              O que criamos
+              O que desenvolvo
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               Soluções digitais completas, do primeiro rascunho até o projeto publicado e
@@ -50,8 +50,8 @@ export function Benefits() {
     <Section>
       <SectionHeading
         eyebrow="Por que a RankBrum.AI"
-        title="Benefícios que aparecem na operação"
-        description="Cada projeto é construído para melhorar um número concreto: mais contatos, menos tarefas manuais ou mais controle sobre o processo."
+        title="Por que desenvolver seu projeto com a RankBrum.AI?"
+        description="Atendimento direto, projeto personalizado e um processo completo, do planejamento à publicação."
       />
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {BENEFITS.map((b, i) => {

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/tecnologias/$slug")({
       };
     }
     const { tech } = loaderData;
-    const title = `${tech.name} — como usamos nos projetos | RankBrum.AI`;
+    const title = `${tech.name} — como utilizo nos projetos | RankBrum.AI`;
     return {
       meta: [
         { title },
@@ -47,7 +47,7 @@ function TechNotFound() {
       <Section className="pt-40">
         <h1 className="font-display text-3xl font-bold">Tecnologia não encontrada</h1>
         <p className="mt-3 text-muted-foreground">
-          Confira a lista completa de tecnologias que usamos nos projetos.
+          Confira a lista completa de tecnologias que utilizo nos projetos.
         </p>
         <Link
           to="/tecnologias"

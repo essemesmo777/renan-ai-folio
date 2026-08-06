@@ -12,7 +12,7 @@ export function waLink(message: string) {
 }
 
 export const DEFAULT_WA_MESSAGE =
-  "Olá! Vim pelo site da RankBrum.AI e gostaria de solicitar um orçamento.";
+  "Olá! Conheci a RankBrum.AI e gostaria de conversar sobre um projeto.";
 
 export type Service = {
   slug: string;
@@ -92,13 +92,13 @@ export const SERVICES: Service[] = [
     icon: "Workflow",
     details: {
       intro:
-        "Automação é tirar da equipe aquilo que o computador consegue fazer sozinho, com consistência.",
+        "Automação é tirar da rotina aquilo que o computador consegue fazer sozinho, com consistência.",
       includes: [
         "Fluxos automáticos entre sistemas",
         "Leitura e organização de informações",
         "Respostas e mensagens automáticas",
         "Relatórios gerados periodicamente",
-        "Alertas para a equipe",
+        "Alertas automáticos",
       ],
       ideal: "Ideal para operações com muitos cadastros, mensagens e conferências manuais.",
     },
@@ -145,38 +145,61 @@ export const SERVICES: Service[] = [
 
 export const BENEFITS = [
   {
-    title: "Mais conversões",
-    description:
-      "Criamos páginas e experiências focadas em transformar visitantes em oportunidades comerciais.",
-    icon: "TrendingUp",
+    title: "Atendimento direto",
+    description: "Você conversa diretamente comigo durante todas as etapas do desenvolvimento.",
+    icon: "MessageCircle",
   },
   {
     title: "Projeto personalizado",
-    description:
-      "Cada solução é planejada de acordo com o negócio, objetivo e público do cliente.",
+    description: "A solução é planejada de acordo com a necessidade real do seu negócio.",
     icon: "Fingerprint",
   },
   {
     title: "Design profissional",
-    description: "Interfaces modernas, responsivas e preparadas para transmitir confiança.",
+    description: "Interfaces modernas, responsivas e desenvolvidas para transmitir confiança.",
     icon: "Palette",
   },
   {
-    title: "Solução completa",
-    description: "Planejamento, design, desenvolvimento, automação, integração e publicação.",
+    title: "Processo completo",
+    description: "Planejamento, protótipo, desenvolvimento, integração, testes e publicação.",
     icon: "Layers",
   },
   {
     title: "Tecnologia atual",
     description:
-      "Utilizamos ferramentas modernas para acelerar o desenvolvimento e melhorar os resultados.",
+      "Ferramentas modernas são utilizadas para acelerar o desenvolvimento e melhorar a experiência.",
     icon: "Cpu",
   },
   {
-    title: "Acompanhamento do projeto",
-    description:
-      "O cliente acompanha as principais etapas, revisões e entregas do desenvolvimento.",
+    title: "Acompanhamento próximo",
+    description: "Você acompanha as principais etapas, revisões e decisões do projeto.",
     icon: "Eye",
+  },
+];
+
+export const CONCEPT_CARDS = [
+  {
+    title: "Contato direto",
+    description:
+      "Você conversa com a mesma pessoa que entende a necessidade, planeja e desenvolve o projeto.",
+    icon: "MessagesSquare",
+  },
+  {
+    title: "Projeto personalizado",
+    description:
+      "Cada solução é desenvolvida de acordo com o objetivo, a operação e o momento do seu negócio.",
+    icon: "Fingerprint",
+  },
+  {
+    title: "Processo transparente",
+    description: "Você acompanha as etapas, revisões e evolução do projeto sem intermediários.",
+    icon: "Eye",
+  },
+  {
+    title: "Tecnologia sob medida",
+    description:
+      "As ferramentas são escolhidas de acordo com o problema que precisa ser resolvido, sem utilizar tecnologia apenas por aparência.",
+    icon: "Cpu",
   },
 ];
 
@@ -207,7 +230,7 @@ export const SEGMENTS: Segment[] = [
       "Topo com proposta de valor e botão de agendamento",
       "Lista de procedimentos com descrição",
       "Galeria de ambiente e estrutura",
-      "Equipe e credenciais profissionais",
+      "Credenciais e formação profissional",
       "Perguntas frequentes",
       "Contato e agendamento",
     ],
@@ -262,7 +285,7 @@ export const SEGMENTS: Segment[] = [
     slug: "agropecuaria",
     name: "Agropecuária",
     short: "Catálogo de produtos e pedidos por WhatsApp.",
-    tag: "Possibilidade de desenvolvimento",
+    tag: "Conceito de projeto",
     hue: 140,
     objective: "Apresentar linhas de produtos e receber pedidos e cotações.",
     audience: "Produtores rurais, pecuaristas e revendas da região.",
@@ -338,7 +361,7 @@ export const SEGMENTS: Segment[] = [
     slug: "empresa-de-transporte",
     name: "Empresa de transporte",
     short: "Serviços logísticos, rotas atendidas e cotação.",
-    tag: "Possibilidade de desenvolvimento",
+    tag: "Conceito de projeto",
     hue: 230,
     objective: "Transmitir confiança operacional e receber solicitações de cotação de frete.",
     audience: "Empresas que precisam de transporte, coleta e entrega recorrente.",
@@ -399,7 +422,7 @@ export const TECHNOLOGIES: Technology[] = [
     usage:
       "Em um projeto, a IA pode ser conectada ao WhatsApp, ao site ou ao painel administrativo para responder dúvidas, organizar pedidos e gerar textos.",
     benefit:
-      "Atendimento mais rápido, menos tarefas manuais e informação organizada sem esforço da equipe.",
+      "Atendimento mais rápido, menos tarefas manuais e informação organizada sem esforço operacional.",
     example:
       "Um cliente envia uma mensagem descrevendo o problema; a IA identifica o serviço desejado, responde com as informações corretas e registra o contato no banco de dados.",
     integrations: ["WhatsApp Cloud API", "Supabase", "n8n", "React"],
@@ -489,7 +512,7 @@ export const TECHNOLOGIES: Technology[] = [
     usage: "Cada etapa manual do processo vira um passo automático dentro de um fluxo.",
     benefit: "Menos tarefas manuais, respostas mais rápidas e maior controle da operação.",
     example:
-      "Um formulário preenchido no site pode cadastrar o contato no banco de dados, enviar uma mensagem pelo WhatsApp, atualizar uma planilha e avisar a equipe automaticamente.",
+      "Um formulário preenchido no site pode cadastrar o contato no banco de dados, enviar uma mensagem pelo WhatsApp, atualizar uma planilha e enviar um aviso automático.",
     integrations: ["Supabase", "WhatsApp Cloud API", "ChatGPT e OpenAI", "Mercado Pago"],
   },
   {
@@ -579,12 +602,12 @@ export const TECHNOLOGIES: Technology[] = [
 ];
 
 export const PROCESS_STEPS = [
-  { title: "Diagnóstico", description: "Entendemos o negócio, o objetivo e o problema que precisa ser resolvido." },
-  { title: "Planejamento", description: "Definimos estrutura, funcionalidades, integrações e cronograma." },
-  { title: "Protótipo", description: "Criamos uma primeira versão visual para validação." },
-  { title: "Desenvolvimento", description: "Transformamos o protótipo em um produto funcional." },
-  { title: "Testes e ajustes", description: "Validamos funcionamento, responsividade e experiência do usuário." },
-  { title: "Publicação", description: "Colocamos o projeto no ar e entregamos as orientações necessárias." },
+  { title: "Diagnóstico", description: "Entendo o negócio, o objetivo e o problema que precisa ser resolvido." },
+  { title: "Planejamento", description: "Defino estrutura, funcionalidades, integrações e cronograma." },
+  { title: "Protótipo", description: "Desenvolvo uma primeira versão visual para validação." },
+  { title: "Desenvolvimento", description: "Transformo o protótipo em um produto funcional." },
+  { title: "Testes e ajustes", description: "Valido funcionamento, responsividade e experiência do usuário." },
+  { title: "Publicação", description: "Coloco o projeto no ar e entrego as orientações necessárias." },
 ];
 
 export type Solution = {
@@ -603,7 +626,7 @@ export const SOLUTIONS: Solution[] = [
   },
   {
     name: "Agente de atendimento para WhatsApp",
-    description: "Atendimento automático que responde dúvidas, qualifica contatos e encaminha para a equipe.",
+    description: "Atendimento automático que responde dúvidas, qualifica contatos e encaminha para o responsável.",
     status: "Protótipo",
     features: ["Respostas automáticas", "Qualificação de leads", "Transferência para humano", "Histórico de conversas"],
   },
@@ -623,7 +646,7 @@ export const SOLUTIONS: Solution[] = [
     name: "Automação administrativa",
     description: "Fluxos que eliminam digitação repetida entre formulários, planilhas e sistemas.",
     status: "Conceito",
-    features: ["Entrada única de dados", "Distribuição automática", "Relatórios periódicos", "Alertas para a equipe"],
+    features: ["Entrada única de dados", "Distribuição automática", "Relatórios periódicos", "Alertas automáticos"],
   },
   {
     name: "Plataforma RANKBRUM ONE AI",
@@ -636,11 +659,11 @@ export const SOLUTIONS: Solution[] = [
 export const FAQS = [
   {
     q: "Quanto tempo leva para criar uma landing page?",
-    a: "O prazo depende do escopo, da quantidade de seções e das integrações necessárias. Após o diagnóstico, apresentamos um cronograma com as etapas e as datas de entrega.",
+    a: "O prazo depende do escopo, da quantidade de seções e das integrações necessárias. Após o diagnóstico, apresento um cronograma com as etapas e as datas de entrega.",
   },
   {
     q: "Vocês criam projetos personalizados?",
-    a: "Sim. Todo projeto é planejado a partir do negócio, do objetivo e do público do cliente. Não trabalhamos com modelos prontos aplicados sem adaptação.",
+    a: "Sim. Todo projeto é planejado a partir do negócio, do objetivo e do público do cliente. Não utilizo modelos prontos aplicados sem adaptação.",
   },
   {
     q: "É possível integrar o site ao WhatsApp?",
@@ -664,11 +687,11 @@ export const FAQS = [
   },
   {
     q: "Como funciona o pagamento?",
-    a: "As condições são definidas na proposta, de acordo com o tamanho e a duração do projeto. Não trabalhamos com valores fixos antes de entender o escopo.",
+    a: "As condições são definidas na proposta, de acordo com o tamanho e a duração do projeto. Não defino valores fixos antes de entender o escopo.",
   },
   {
     q: "O domínio e a hospedagem estão incluídos?",
-    a: "Isso depende do que for combinado na proposta. Orientamos sobre as opções de domínio e publicação e podemos cuidar da configuração.",
+    a: "Isso depende do que for combinado na proposta. Oriento sobre as opções de domínio e publicação e posso cuidar da configuração.",
   },
   {
     q: "Vocês oferecem suporte depois da entrega?",

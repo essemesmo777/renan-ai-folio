@@ -8,14 +8,14 @@ import { GlowBackdrop, Section, SectionHeading } from "@/components/site/primiti
 export const Route = createFileRoute("/tecnologias/")({
   head: () => ({
     meta: [
-      { title: "Tecnologias que usamos | RankBrum.AI" },
+      { title: "Tecnologias que utilizo | RankBrum.AI" },
       {
         name: "description",
         content:
           "Conheça as tecnologias usadas pela RankBrum.AI em landing pages, sistemas, automações e agentes de IA — explicadas em linguagem simples.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Tecnologias que usamos | RankBrum.AI" },
+      { property: "og:title", content: "Tecnologias que utilizo | RankBrum.AI" },
       {
         property: "og:description",
         content: "IA, automação, banco de dados, pagamentos e publicação explicados de forma simples.",
@@ -44,7 +44,7 @@ function TechIndex() {
           </Link>
           <SectionHeading
             eyebrow="Stack completa"
-            title="Tecnologias que usamos nos projetos"
+            title="Tecnologias que utilizo nos projetos"
             description="Cada página explica o que a tecnologia é, para que serve, como usamos, o benefício para o cliente e um exemplo prático."
             align="left"
           />
