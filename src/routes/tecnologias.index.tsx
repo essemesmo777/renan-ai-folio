@@ -5,7 +5,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { GlowBackdrop, Section, SectionHeading } from "@/components/site/primitives";
 
-export const Route = createFileRoute("/tecnologias")({
+export const Route = createFileRoute("/tecnologias/")({
   head: () => ({
     meta: [
       { title: "Tecnologias que usamos | RankBrum.AI" },
