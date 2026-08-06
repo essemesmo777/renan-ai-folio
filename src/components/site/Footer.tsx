@@ -18,6 +18,11 @@ export function Footer() {
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
               RankBrum.AI — Estúdio digital independente de IA, automação e produtos digitais.
             </p>
+            <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
+              Uma <span className="text-violet">EuGência</span> digital: atendimento direto,
+              estratégia personalizada e desenvolvimento sem intermediários.
+            </p>
+
           </div>
 
           <div>
