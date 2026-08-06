@@ -21,11 +21,21 @@ export function Hero() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 rounded-full surface px-4 py-2 text-xs font-medium text-muted-foreground"
+              className="inline-flex items-center gap-2 rounded-full surface px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground"
             >
               <Sparkles className="size-3.5 text-violet" />
-              Agência digital de tecnologia e inteligência artificial
+              Estúdio digital independente
             </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.03 }}
+              className="mt-4 text-sm text-muted-foreground"
+            >
+              Uma <span className="text-violet">EuGência</span> de produtos digitais, automação e
+              inteligência artificial.
+            </motion.p>
 
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
@@ -33,11 +43,11 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.05 }}
               className="mt-6 text-balance text-4xl font-bold leading-[1.05] sm:text-5xl md:text-6xl lg:text-[4.1rem]"
             >
-              <span className="text-shine">Tecnologia, design e IA</span>
+              <span className="text-shine">Transformo ideias em produtos digitais,</span>
               <br />
-              para empresas que querem{" "}
+              automações e{" "}
               <span className="bg-[linear-gradient(120deg,#a855f7,#ff2e9a,#3b82f6)] bg-clip-text text-transparent">
-                crescer no digital
+                experiências com IA
               </span>
             </motion.h1>
 
@@ -47,9 +57,9 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.12 }}
               className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg"
             >
-              Criamos landing pages, sites, aplicativos, sistemas SaaS, automações e agentes de
-              inteligência artificial — com projeto sob medida, design profissional e integração
-              com as ferramentas que a sua empresa já usa.
+              Na RankBrum.AI, você fala diretamente com quem planeja e desenvolve o seu projeto.
+              Desenvolvo landing pages, aplicativos, sistemas e automações personalizadas para
+              transformar processos e criar novas oportunidades para o seu negócio.
             </motion.p>
 
             <motion.div
@@ -65,16 +75,17 @@ export function Hero() {
                 className="inline-flex items-center gap-2 rounded-xl grad-brand px-6 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
               >
                 <MessageCircle className="size-4" />
-                Solicitar orçamento
+                Conte sobre seu projeto
               </a>
               <a
-                href="#projetos"
+                href="#servicos"
                 className="inline-flex items-center gap-2 rounded-xl surface px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-white/[0.07]"
               >
-                Ver projetos
+                Conheça as soluções
                 <ArrowRight className="size-4" />
               </a>
             </motion.div>
+
 
             <motion.ul
               initial={{ opacity: 0 }}
