@@ -69,8 +69,8 @@ export function TechStack() {
     <Section id="tecnologias">
       <SectionHeading
         eyebrow="Stack tecnológica"
-        title="As tecnologias por trás dos projetos"
-        description="Clique em qualquer tecnologia para entender, em linguagem simples, o que ela faz e como ela aparece no seu projeto."
+        title="Tecnologias e ferramentas"
+        description="Ferramentas que utilizo para construir produtos digitais, automações e experiências de IA. Clique em qualquer tecnologia para entender o que ela faz e como ela aparece no seu projeto."
       />
 
       <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -135,7 +135,7 @@ export function TechStack() {
                   className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl grad-brand px-5 py-3 text-sm font-semibold text-white"
                 >
                   <MessageCircle className="size-4" />
-                  Falar com a equipe
+                  Falar diretamente comigo
                 </a>
               </div>
             </>

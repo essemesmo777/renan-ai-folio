@@ -16,9 +16,9 @@ export function Services() {
   return (
     <Section id="servicos">
       <SectionHeading
-        eyebrow="O que fazemos"
+        eyebrow="Serviços"
         title="Serviços que resolvem problemas reais"
-        description="Do primeiro contato do cliente até a operação interna da empresa: cada serviço é planejado para gerar resultado, não apenas presença digital."
+        description="Desenvolvo soluções digitais personalizadas para empresas, profissionais e projetos que precisam melhorar sua presença digital, automatizar tarefas ou transformar uma ideia em produto."
       />
 
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

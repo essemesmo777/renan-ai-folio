@@ -3,6 +3,7 @@ import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { Services } from "@/components/site/Services";
 import { Benefits, WhatWeCreate } from "@/components/site/Benefits";
+import { Concept } from "@/components/site/Concept";
 import { PortfolioModels, Showcase } from "@/components/site/Portfolio";
 import { TechStack } from "@/components/site/TechStack";
 import { Process, Solutions } from "@/components/site/Process";
@@ -20,14 +21,14 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Agência digital que cria landing pages, sites, aplicativos, sistemas SaaS, automações e agentes de inteligência artificial sob medida para empresas.",
+          "Estúdio digital independente que desenvolve landing pages, sites, aplicativos, sistemas SaaS, automações e agentes de inteligência artificial sob medida.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "RankBrum.AI | Tecnologia, design e IA para empresas" },
+      { property: "og:title", content: "RankBrum.AI | Estúdio digital independente de IA e automação" },
       {
         property: "og:description",
         content:
-          "Landing pages, aplicativos, sistemas SaaS, automações e agentes de IA com projeto personalizado.",
+          "Uma EuGência digital: atendimento direto, estratégia personalizada e desenvolvimento sem intermediários.",
       },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -41,7 +42,7 @@ export const Route = createFileRoute("/")({
           "@type": "ProfessionalService",
           name: "RankBrum.AI",
           description:
-            "Agência digital de landing pages, sistemas, automações e agentes de inteligência artificial.",
+            "Estúdio digital independente de landing pages, sistemas, automações e agentes de inteligência artificial.",
           areaServed: "BR",
           email: "augustocostabrum@gmail.com",
           telephone: "+5551997643562",
@@ -72,6 +73,7 @@ function Home() {
       <Header />
       <main>
         <Hero />
+        <Concept />
         <Services />
         <WhatWeCreate />
         <Benefits />

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import { NAV_LINKS, DEFAULT_WA_MESSAGE, waLink, CONTACT } from "@/lib/site-data";
+import { NAV_LINKS, DEFAULT_WA_MESSAGE, waLink } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 
 export function Header() {

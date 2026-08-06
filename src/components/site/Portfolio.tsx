@@ -20,8 +20,8 @@ export function PortfolioModels() {
     <Section id="projetos">
       <SectionHeading
         eyebrow="Modelos de projeto"
-        title="Como ficaria o seu segmento"
-        description="Modelos demonstrativos e conceitos de projeto criados pela RankBrum.AI para mostrar estrutura, funcionalidades e estratégia — sem apresentar clientes fictícios."
+        title="Possibilidades para o seu projeto"
+        description="Conheça modelos demonstrativos de landing pages e experiências digitais que podem ser adaptados ao seu segmento."
       />
 
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

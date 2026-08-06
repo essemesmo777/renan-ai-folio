@@ -6,9 +6,9 @@ export function Process() {
   return (
     <Section id="processo">
       <SectionHeading
-        eyebrow="Como trabalhamos"
-        title="Um processo claro do início ao fim"
-        description="Você sabe exatamente em que etapa o projeto está e o que vem a seguir."
+        eyebrow="Como funciona"
+        title="Como desenvolvo cada projeto"
+        description="Cada projeto começa com o entendimento do problema e avança por etapas claras, permitindo que você acompanhe o desenvolvimento até a entrega."
       />
       <div className="relative mt-14">
         <div className="absolute left-[19px] top-2 hidden h-[calc(100%-1rem)] w-px bg-[linear-gradient(180deg,#a855f7,#ff2e9a,#3b82f6)] opacity-40 sm:block" />
